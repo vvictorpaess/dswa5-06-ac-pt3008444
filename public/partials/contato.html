@@ -1,1 +1,27 @@
 <h1>Contato</h1>
+
+<div ng-repeat="contato in contatos"></div>
+
+<label>Nome completo</label>
+<div class="input-group mb-3">
+    <input type="text" class="form-control" placeholder="Digite o nome" aria-label="Username" aria-describedby="basic-addon1" value="{{contato.nome}}">
+</div>
+
+<label>Email</label>
+<div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="basic-addon1">@</span>
+    </div>
+    <input type="text" class="form-control" placeholder="fabio.teixeira@ifsp.edu.br" aria-label="Username" aria-describedby="basic-addon1" value="{{contato.email}}">
+  </div>
+
+<br>
+
+<button class="btn btn-primary">Salvar</button>
+<button type="button" class="btn btn-outline-dark">Voltar</button>
+
+<style>
+    h1 {
+        text-align: center;
+    }
+</style>
