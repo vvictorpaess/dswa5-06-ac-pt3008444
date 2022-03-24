@@ -17,5 +17,5 @@ angular.module('ifsp').controller('CursoController',
 
         } else { 
 			$scope.curso = new Curso();
-		}
+		}  
     });
